@@ -1,37 +1,52 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS Pro</title>
+    <script src="./script.js" defer></script>
+  </head> -->
+  <body>
+    <div id="book1">
+      <h3>A Good Book</h3>
+      <p>Status: <span class="status" style="color: purple">overdue</span></p>
+      <button class="reserve">Reserve</button>
+      <button class="checkout">Check Out</button>
+      <button class="checkin" style="color: green">Check In</button>
+    </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IWA 12 Not that confident about it </title>
-</head>
-
-<body>
-  <div id="book1">
-    <h3>A Good Book</h3>
-    <p>Status: <span class="status" style="color: purple">overdue</span></p>
-    <button class="reserve">Reserve</button>
-    <button class="checkout">Check Out</button>
-    <button class="checkin" style="color: green">Check In</button>
-  </div>
-
-  <div id="book2">
-    <h3>The Book of Books</h3>
-    <p>Status: <span class="status" style="color: purple">reserved</span></p>
-    <button class="reserve">Reserve</button>
-    <button class="checkout">Check Out</button>
-    <button class="checkin" style="color: green">Check In</button>
-  </div>
-
-  <div id="book3">
-    <h3>Another Book</h3>
-    <p>Status: <span class="status" style="color: purple">shelf</span></p>
-    <button class="reserve">Reserve</button>
-    <button class="checkout">Check Out</button>
-    <button class="checkin" style="color: green">Check In</button>
-  </div>
-</body>
-
+    <div id="book2">
+      <h3>The Book of Books</h3>
+      <p>Status: <span class="status" style="color: purple">reserved</span></p>
+      <button class="reserve">Reserve</button>
+      <button class="checkout">Check Out</button>
+      <button class="checkin" style="color: green">Check In</button>
+    </div>
+    
+    <div id="book3">
+      <h3>Another Book</h3>
+      <p>Status: <span class="status" style="color: purple">shelf</span></p>
+      <button class="reserve">Reserve</button>
+      <button class="checkout">Check Out</button>
+      <button class="checkin" style="color: green">Check In</button>
+    </div>
+  </body>
 </html>
+
+//How the code works 
+<!-- This is a JavaScript code that updates the UI of a book reservation system based on the status of a book, using an object called STATUS_MAP.
+
+The STATUS_MAP object has four different states (shelf, reserved, overdue, and checkedOut), each with its own color and button functionalities.
+
+The code starts by selecting the relevant elements in the HTML using the querySelector method. Then, it updates the text content and color of the status element based on the initial status, which is shelf.
+
+Next, the code sets the disabled property of the reserve, checkout, and checkin buttons based on the initial status in the STATUS_MAP object.
+
+Finally, the code adds an event listener to the status element that listens for changes in the selected status. When a new status is selected, the code updates the color and button functionalities based on the STATUS_MAP object for that status.
+
+Overall, this code makes it easy to update the UI of a book reservation system based on the status of a book, allowing users to easily reserve, checkout, or check in a book depending on its availability. -->
+
+//What I did 
